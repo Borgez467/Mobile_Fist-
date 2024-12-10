@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #3c57c3, #af9fdd);
+    background-image: url(../back-phone.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+header {
+    background-color: rgba(75, 72, 255, 0.856);
+    margin-top: 3px;
+    border-radius: 7px 7px 0px 0px;
+    width: 90vw;
+    margin: auto;
+}
+
+header>h1 {
+    background-color: #ffffff;
+    margin-top: 3px;
+    border-radius: 7px 7px 0px 0px;
+    width: 90vw;
+    margin: auto;
+}
+
+
+#burger {
+    background-color: #1465bb;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    width: 90vw;
+    cursor: pointer;
+}
+
+#burger:hover {
+    background-color: \#000000; 
+}
+
+
+menu {
+    color:whitesmoke;
+    text-align: center;
+    list-style-type: none;
+    width: 90vw;
+    margin: auto;
+}
+
+
+menu>ul {
+list-style-type: none;
+}
+
+
+menu>ul>li>a {
+    display: block;
+    padding: 7px;
+text-decoration: none;
+text-align: center;
+background-color: #ffffff;
+border-radius: 0px 0px 0px 0px;
+color: rgb(0, 0, 0);
+margin: auto;
+}
+
+
+menu>ul>li>a:hover {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke; 
+    text-decoration: none;
+}
+
+
+main {
+    background-color: #4c5aeed3;
+    width: 90vw;
+    margin: auto;
+    border-radius: 7px 7px 0px 0px;
+    margin-top: 7px; 
+    padding:3px;
+}
+
+
+article>h2{
+    padding-bottom: 17px;
+}
+
+
+article>p {
+    text-align: justify;
+    margin-bottom: 17px;
+    text-indent: 17px
+}
+
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 0px 0px 7px 7px;
+    width: 90vw;
+    padding: 7px;
+    margin: auto;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+}
+
+img#mobile {
+    display: block;
+}
+
+img#tablet {
+    display:  none;
+}
+
+img#print{
+    display: none;
+}
+
+img#pc{
+    display: none;
+}
+
+img#tv {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image:url("../back-tablet.jpg");
+
+    }
+
+    #burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        width: 90px;
+        margin: auto;
+        background-color: aliceblue;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #ffffff;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+    width: 90vw;
+    margin: auto;
+    }
+
+   article>p {
+    text-align: justify;
+    margin-bottom: 17px;
+    text-indent: 17px;
+   }
+
+   footer {
+    width: 90vw;
+    margin: auto;
+}
+
+img#mobile {
+    display: none;
+}
+
+img#tablet {
+    display: block;
+}
+
+img#print {
+    display: none;
+}
+
+img#pc {
+    display: none;
+}
+
+img#tv {
+    display: none;
+}
+
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px) { 
+    body {
+        background-image:url(../back-pc.jpg);
+    }
+
+    #burger {
+        display: none;
+    }
+
+    menu { 
+        display: block;
+        background-color: #21203f;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: aliceblue;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 { 
+        padding-bottom: 17px
+    }
+
+    article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none
+    }
+}
+
+
+@media screen and ( min-width: 1201px) {
+    body {
+        background-image:url(../back-tv.jpg);
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        background-color: #ffffff;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #f1f1f1;
+     }
+
+    main {
+      width: 90vw;
+      margin:auto
+     }
+
+     article>h2 {
+        padding-bottom: 17px;
+     }
+
+     article>p {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+     }
+
+     footer {
+        width: 90vw;
+        margin: auto;
+     }
+
+     img#mobile {
+        display: none;
+     }
+
+     img#tablet {
+        display: none;
+     }
+
+     img#print {
+        display: none;
+     }
+
+     img#pc { 
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}
